@@ -37,7 +37,14 @@ public class OperacionesBasicas {
                     System.out.println("Error");
                 }
                 break;
-
+            case RAIZ:
+                try{
+                    resultado= (float)
+                            Math.pow(num1, 1.0 / num2);
+                }catch(Exception e){
+                    System.out.println("Error");
+                }
+                break;
         }
         return resultado;
     }
